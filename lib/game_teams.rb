@@ -2,9 +2,10 @@
 
 
 class GameTeams
-  attr_reader :team_id, :h_o_a, :result, :settled_in, :head_coach, :goals, :shots, :tackles, :pim, :p_p_o, :p_p_g, :fow_percent, :giveaways, :takeaways
+  attr_reader :game_id, :team_id, :h_o_a, :result, :settled_in, :head_coach, :goals, :shots, :tackles, :pim, :p_p_o, :p_p_g, :fow_percent, :giveaways, :takeaways
 
-  def initialize(team_id, h_o_a, result, settled_in, head_coach, goals, shots, tackles, pim ,ppo, ppg, fp, giveaways, takeaways)
+  def initialize(game_id, team_id, h_o_a, result, settled_in, head_coach, goals, shots, tackles, pim ,ppo, ppg, fp, giveaways, takeaways)
+  @game_id = game_id 
   @team_id = team_id
   @h_o_a = h_o_a
   @result = result
