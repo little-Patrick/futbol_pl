@@ -2,9 +2,9 @@ require './spec/spec_helper'
 
 describe StatTracker do
   before :all do
-    game_path = './data/simple_games.csv'
-    team_path = './data/simple_teams.csv'
-    game_teams_path = './data/simple_game_teams.csv'
+    game_path = './data/small_games.csv'
+    team_path = './data/small_teams.csv'
+    game_teams_path = './data/small_game_teams.csv'
 
     locations = {
       games: game_path,
